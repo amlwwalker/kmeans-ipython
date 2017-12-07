@@ -1,5 +1,4 @@
 #!/bin/bash
 
 sudo pip install virtualenv jupyter numpy pandas matplotlib
-sudo -u decoded virtualenv -p $(which python) env && \
-sudo -u decoded bash -c 'source env/bin/activate && jupyter notebook'
+sudo -u decoded bash -c 'virtualenv -p $(which python) env && source env/bin/activate && jupyter notebook'
