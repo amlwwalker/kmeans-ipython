@@ -11,4 +11,6 @@ cd kmeans-ipython
 ./setup
 ```
 
+The `setup` script will also start the notebook, however if the terminal is closed, you can start the notebook without reinstalling dependencies by running `./start` within the repo root directory.
+
 (open `model.ipynb` for teacher, and `exercise.ipynb` for students)
