@@ -1,0 +1,7 @@
+#!/bin/bash
+su decodedadmin && \
+sudo pip install virtualenv jupyter numpy pandas matplotlib && \
+exit && \
+virtualenv -p $(which python) env && \
+source env/bin/activate && \
+jupyter notebook
