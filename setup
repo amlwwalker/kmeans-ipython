@@ -1,4 +1,6 @@
 #!/bin/bash
-
-sudo pip install virtualenv jupyter numpy pandas matplotlib
-sudo -u decoded bash -c 'virtualenv -p $(which python) env && source env/bin/activate && jupyter notebook'
+su -c 'sudo pip install virtualenv' decodedadmin && \
+virtualenv -p $(which python) env && \
+source env/bin/activate && \
+pip install jupyter numpy pandas matplotlib && \
+jupyter notebook
